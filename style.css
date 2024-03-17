@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: calc(100% - 5px);
+    height: calc(100vh - 100px); /* Alterando a altura para ocupar 100% da altura da tela */
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 10px; /* Adiciona um espaçamento entre o textarea e os botões */
+    padding: 0 20px; /* Adiciona um espaçamento à esquerda e à direita */
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 8px; /* Adiciona uma leve borda arredondada */
+}
+
+#output {
+    flex: 1; /* Faz com que o output ocupe todo o espaço restante verticalmente */
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#message strong {
+    font-size: 1.2em;
+}
+
+.sub-message {
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}

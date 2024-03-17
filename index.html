@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <textarea id="input" placeholder="Digite sua mensagem aqui" oninput="checkMessage()"></textarea>
+            <div class="buttons">
+                <button onclick="openNewPage('encrypt')">Criptografar</button>
+                <button onclick="openNewPage('decrypt')">Descriptografar</button>
+            </div>
+        </div>
+        <div class="separator">
+            <img src="img.png" alt="Lock Icon" class="centered-image">
+            <p id="message" class="hidden">
+                <strong>Nenhuma mensagem<br>Encontrada.</strong><br>
+                <span class="sub-message">Digite um texto que você deseja</span>
+                <span class="sub-message">criptografar ou descriptografar.</span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
